@@ -59,13 +59,13 @@ buttons = [
     Button(310, button_y, 50, 50, WHITE, "Clear", BLACK)
 ]
 
-while run: 
+while run:
     clock.tick(FPS)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-        
+
         if pygame.mouse.get_pressed()[0]:
             pos = pygame.mouse.get_pos()
 

@@ -22,10 +22,8 @@ class Button:
     def clicked(self, pos):
         x, y = pos
 
-        if not (x >= self.x and x <= self.x + self.width):
+        if self.x <= x <= self.x + self.width and self.y <= y <= self.y + self.height:
+            return True
+        else:
             return False
-        if not (y >= self.y and y <= self.y + self.height):
-            return False
-        
-        return
     
